@@ -1,0 +1,29 @@
+@font-face {
+    font-family: PoppinsRegular;
+    src: url(../PoppinsFont/Poppins-Regular.ttf);}
+@font-face {
+    font-family: PoppinsBold;
+    src: url(../PoppinsFont/Poppins-Bold.ttf);}
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(../PoppinsFont\Poppins-Medium.ttf);}
+@font-face {
+    font-family: PoppinsBlack;
+    src: url(../PoppinsFont\Poppins-Black.ttf);}
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../PoppinsFont/Roboto-Regular.ttf);}
+
+:root{
+    --PinkColor: #CE1F6A !important;
+    --BlueColor: #3B14A7 !important;
+    --YellowColor: #FA9905 !important;
+    --BlackColor: #3C2C3E !important;
+    --DarkBlueColor: #0D335D !important;
+    --LightBlackColor: #4d4d4d !important;
+    --LightColor: #f8f9fa !important;
+    --shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.384) !important;
+    --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+    --shadow-none: none !important;
+}

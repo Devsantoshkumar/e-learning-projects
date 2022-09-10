@@ -1,0 +1,452 @@
+*{
+    font-family: RobotoRegular;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--LightColor);
+    /* overflow-x: hidden; */
+}
+
+.text-danger{
+    display: block;
+    color: red;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.text-success{
+    display: block;
+    color: green;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+.header{
+    background-color: var(--DarkBlueColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    width: 100%;
+}
+.HeaderLogo{
+    width: 40%;
+}
+.HeaderLogo a{
+    font-size: 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.SearchBar{
+    width: 30%;
+}
+.InputBox{
+    background-color: #fff;
+    height: 30px;
+    display: flex;
+}
+.InputBox input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding-left: 10px;
+}
+.InputBox button{
+    border: 0;
+    outline: none;
+    background-color: var(--PinkColor);
+    padding: 0 10px;
+    cursor: pointer;
+}
+.UserJoinBox{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.UserJoinBox a{
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+    margin: 0 8px;
+    font-size: 14px;
+    padding: 4px;
+}
+.navigation{
+    background-color: #fff;
+    box-shadow: var(--shadow-sm);
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1000;
+    height: 48px;
+}
+.navigation .ToggleNav{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0 20px;
+    display: none;
+}
+.navigation .ToggleNav img{
+    width: 30px;
+    height: 30px;
+}
+.navigation ul{
+    list-style: none;
+    display: flex;
+    margin-left: 5px;
+    padding: 5px 0;
+}
+.navigation ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: var(--PinkColor);
+}
+.wrapper{
+    display: flex;
+}
+.MainContent{
+    display: flex;
+    width: 85%;
+}
+.LeftSidebar{
+    width: 18%;
+}
+.ToggleSidebarbtn{
+    margin-right: 20px;
+    display: none;
+}
+.ToggleSidebarbtn .ToggleSide{
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.ToggleSidebarbtn .ToggleSide .img{
+    width: 30px;
+    height: 30px;
+}
+.SidebarCategory{
+    background-color: #fff;
+    display: block;
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    font-size: 18px;
+    margin-top: 2px;
+}
+.LeftSidebar{
+    background-color: #fff;
+    margin: 2px 0;
+}
+.LeftSidebar ul{
+    list-style: none;
+}
+.LeftSidebar ul li a{
+    text-decoration: none;
+    color: var(--PinkColor);
+    display: block;
+    padding: 8px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px dotted #4d4d4d;
+    transition: all 0.2s ease-in-out;
+} 
+.LeftSidebar ul li:first-child{
+    border-top: 1px dotted #4d4d4d;
+}
+.LeftSidebar ul li a:hover{
+    background-color: var(--PinkColor);
+    color: #ffff;
+}
+
+.ContentSection{
+    width: 82%;
+    background-color: #ffff;
+    margin: 2px 0;
+    min-height: 100vh;
+    border-left: 2px solid #eeee;
+    border-right: 2px solid #eeee;
+}
+.TopicHeading{
+    border-bottom: 1px solid #4444;
+    padding: 15px 50px;
+}
+.content{
+    width: 98%;
+    margin: 10px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+.contentDetailPage{
+    width: 98%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.ProjCard{
+    background-color: var(--LightColor);
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #4444;
+    transition: all 0.3s ease-in-out;
+}
+.ProjCard:hover{
+    box-shadow: var(--shadow);
+}
+.ProjCard .projThumbnail{
+    width: 100%;
+    border-radius: 5px;
+}
+.ProjCard .cardHeading{
+    display: block;
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--PinkColor);
+}
+.ProjCard .cardHeading:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.ProjCard .cardFooter{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.ProjCard .actionBtn{
+    text-decoration: none;
+    font-size: 12px;
+    display: block;
+    padding: 6px 8px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.ProjCard .actionBtn:nth-child(1){
+    border: 1px solid #09B83E;
+    color: #09B83E;
+}
+.ProjCard .actionBtn:nth-child(1):hover{
+    background-color: #09B83E;
+    color: #fff;
+}
+.ProjCard .actionBtn:nth-child(2){
+    border: 1px solid #CD201F;
+    color: #CD201F;
+}
+.ProjCard .actionBtn:nth-child(2):hover{
+    background-color: #CD201F;
+    color: #fff;
+}
+.ProjCard .actionBtn:nth-child(3){
+    border: 1px solid #1877F2;
+    color: #1877F2;
+}
+.ProjCard .actionBtn:nth-child(3):hover{
+    background-color: #1877F2;
+    color: #fff;
+}
+.ProjCard .actionBtn:nth-child(4){
+    border: 1px solid #FF0084;
+    color: #FF0084;
+}
+.ProjCard .actionBtn:nth-child(4):hover{
+    background-color: #FF0084;
+    color: #fff;
+}
+.projDetailSection{
+    width: 93%;
+}
+.projDetailSection img{
+    width: 100%;
+}
+.detailActionBtns{
+    padding: 10px;
+    display: flex;
+    margin: 10px 0;
+}
+.detailActionBtns .button{
+    display: block;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 7px 10px;
+    font-size: 14px;
+}
+.detailActionBtns .button:nth-child(1){
+    background-color: #09B83E;
+    color: #fff;
+    margin-left: 0;
+}
+.detailActionBtns .button:nth-child(2){
+    background-color: #FF0084;
+    color: #fff;
+}
+.detailActionBtns .button:nth-child(3){
+    background-color: #CD201F;
+    color: #fff;
+}
+.detailActionBtns .button:nth-child(4){
+    background-color: #1877F2;
+    color: #fff;
+}
+.projDesction{
+    margin: 10px 0;
+}
+.projDesction .projectHeader{
+    background-color: var(--BlueColor);
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+}
+.description p{
+    padding: 20px 0;
+}
+.description ul{
+    list-style: none;
+}
+.description{
+    font-size: 16px;
+}
+.RightSidebar{
+    width: 15%;
+}
+
+.RegistrationContainer{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: min-content();
+    margin-top: 30px;
+}
+.userForm{
+    background-color: #fff;
+    box-shadow: var(--shadow-sm);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    margin: 50px 0 100px 0;
+}
+
+.mainForm{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.FormHeading{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+    color: var(--PinkColor);
+    font-weight: bold;
+}
+.InputGroup{
+    width: 90%;
+    margin: 10px auto;
+}
+.InputGroup input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #4444;
+    border-radius: 5px;
+}
+.InputGroup input::placeholder{
+    font-size: 16px;
+}
+.InputGroup input:focus{
+    border: 2px solid var(--BlueColor);
+}
+.actionSendButton{
+    border: 0;
+    outline: none;
+    background-color: var(--DarkBlueColor);
+    padding: 5px 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.errormsg{
+    width: 90%;
+    margin: 0 auto;
+}
+.externalLInks{
+    width: 100%;
+    margin: 0 auto;
+}
+.textLinks{
+    border-top: 2px solid #4444;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.textLinks a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+.text{
+    display: flex;
+    color: #4d4d4d;
+    font-size: 14px;
+    justify-content: flex-start;
+}
+
+.recommondedProj{
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+
+.searchterm{
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: red;
+}
+.recommondedHeading{
+    text-align: center;
+    border-bottom: 2px solid #4444;
+    border-top: 2px solid #4444;
+    padding: 15px;
+}
+
+.footer{
+    width: 100%;
+    background-color: var(--DarkBlueColor);
+    height: 150px;
+}
+.footer span{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+.footer span a{
+    text-decoration: none;
+    color: var(--PinkColor);
+}
